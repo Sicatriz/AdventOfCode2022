@@ -14,9 +14,7 @@ int main()
 
     int iCratesQ, iFromCol, iToCol;
     string sCratesQ, sFromCol, sToCol;
-    //int fromColSize, toColSize;
-    //int lastPos;
-
+    int counter = 0;
     vector <string> crates1 = {"S","M","R","N","W","J","V","T"};
     vector <string> crates2 = {"B","W","D","J","Q","P","C","V"};
     vector <string> crates3 = {"B","J","F","H","D","R","P"};
@@ -26,10 +24,6 @@ int main()
     vector <string> crates7 = {"B","J","R","P","L"};
     vector <string> crates8 = {"N","C","S","L","T","Z","B","W"};
     vector <string> crates9 = {"L","S","G"};
-
-
-    int counter = 0;
-
 
     if (myfile.is_open())
     {
@@ -411,12 +405,6 @@ int main()
                     crates1.push_back(tempCrates.back());
                     tempCrates.pop_back();
                 }
-                 // print tempCrates
-                // cout << "tempCrates leeg : ";
-                // for(int i=0; i < tempCrates.size(); i++)
-                // {
-                //     cout << tempCrates.at(i);
-                // } cout << endl;
 
                 // print crates1
                 cout << "crates1 filled : ";
@@ -440,12 +428,6 @@ int main()
                     crates2.push_back(tempCrates.back());
                     tempCrates.pop_back();
                 }
-                 // print tempCrates
-                // cout << "tempCrates leeg : ";
-                // for(int i=0; i < tempCrates.size(); i++)
-                // {
-                //     cout << tempCrates.at(i);
-                // } cout << endl;
 
                 // print crates2
                 cout << "crates2 filled : ";
@@ -469,12 +451,6 @@ int main()
                     crates3.push_back(tempCrates.back());
                     tempCrates.pop_back();
                 }
-                 // print tempCrates
-                // cout << "tempCrates leeg : ";
-                // for(int i=0; i < tempCrates.size(); i++)
-                // {
-                //     cout << tempCrates.at(i);
-                // } cout << endl;
 
                 // print crates3
                 cout << "crates3 filled : ";
@@ -498,12 +474,6 @@ int main()
                     crates4.push_back(tempCrates.back());
                     tempCrates.pop_back();
                 }
-                 // print tempCrates
-                // cout << "tempCrates leeg : ";
-                // for(int i=0; i < tempCrates.size(); i++)
-                // {
-                //     cout << tempCrates.at(i);
-                // } cout << endl;
 
                 // print crates4
                 cout << "crates4 filled : ";
@@ -527,12 +497,6 @@ int main()
                     crates5.push_back(tempCrates.back());
                     tempCrates.pop_back();
                 }
-                 // print tempCrates
-                // cout << "tempCrates leeg : ";
-                // for(int i=0; i < tempCrates.size(); i++)
-                // {
-                //     cout << tempCrates.at(i);
-                // } cout << endl;
 
                 // print crates5
                 cout << "crates5 filled : ";
@@ -556,12 +520,6 @@ int main()
                     crates6.push_back(tempCrates.back());
                     tempCrates.pop_back();
                 }
-                 // print tempCrates
-                // cout << "tempCrates leeg : ";
-                // for(int i=0; i < tempCrates.size(); i++)
-                // {
-                //     cout << tempCrates.at(i);
-                // } cout << endl;
 
                 // print crate6
                 cout << "crates6 filled : ";
@@ -585,12 +543,6 @@ int main()
                     crates7.push_back(tempCrates.back());
                     tempCrates.pop_back();
                 }
-                 // print tempCrates
-                // cout << "tempCrates leeg : ";
-                // for(int i=0; i < tempCrates.size(); i++)
-                // {
-                //     cout << tempCrates.at(i);
-                // } cout << endl;
 
                 // print crates7
                 cout << "crates7 filled : ";
@@ -614,12 +566,6 @@ int main()
                     crates8.push_back(tempCrates.back());
                     tempCrates.pop_back();
                 }
-                 // print tempCrates
-                // cout << "tempCrates leeg : ";
-                // for(int i=0; i < tempCrates.size(); i++)
-                // {
-                //     cout << tempCrates.at(i);
-                // } cout << endl;
 
                 // print crates8
                 cout << "crates8 filled : ";
@@ -643,12 +589,6 @@ int main()
                     crates9.push_back(tempCrates.back());
                     tempCrates.pop_back();
                 }
-                 // print tempCrates
-                // cout << "tempCrates leeg : ";
-                // for(int i=0; i < tempCrates.size(); i++)
-                // {
-                //     cout << tempCrates.at(i);
-                // } cout << endl;
 
                 // print crates9
                 cout << "crates9 filled : ";
@@ -661,7 +601,6 @@ int main()
                 cout << "A problem accured when placing the crates..." << endl;
                 break;
             }
-            
         }
         
         myfile.close();
@@ -716,12 +655,5 @@ int main()
                 {
                     cout << crates9.at(i);
                 } cout << endl;
-
-
-    
-
-
-    //cout << "Priority total is : " << priorTot << endl;
-
     return 0;
 }
